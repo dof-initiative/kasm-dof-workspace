@@ -1,3 +1,4 @@
 !kasm_user/
 kasm_user/*
+kasm_user_backup/*
 !kasm_user/_README
