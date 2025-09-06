@@ -1,0 +1,7 @@
+.bashrc
+.mozilla
+.gitconfig
+.gnupg
+.ssh
+Pharo
+repos
