@@ -8,5 +8,5 @@
 
 # move persistent files back to kasm_user/
 while read -r line; do
-    mv kasm_user_backup/$line kasm_user
+    rsync -avh kasm_user_backup/$line kasm_user && rm -rf kasm_user_backup/$line
 done < files_to_persist.txt
