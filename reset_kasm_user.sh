@@ -26,10 +26,8 @@ while read -r line; do
 done < files_to_persist.txt
 
 # reset kasm_user
-mv ./kasm_user/_README ./_README
-rm -rf ./kasm_user/*
-rm -rf ./kasm_user/.*
-mv ./_README ./kasm_user/_README
+rm -rf ./kasm_user/
+git restore ./kasm_user/
 
 if [ ! -r kasm_user/Desktop/Uploads ]; then
     mkdir -p kasm_user/Desktop/Uploads
