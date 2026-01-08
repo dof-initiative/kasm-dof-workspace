@@ -388,6 +388,7 @@
         - linkml=={{ linkml_version }}
         - black[jupyter]
         - yamllint==1.31.0
+        - mystmd
 
 -
   # install Pandoc & TexLive
