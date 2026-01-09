@@ -389,6 +389,7 @@
         - black[jupyter]
         - yamllint==1.31.0
         - mystmd
+        - cookiecutter
 
 -
   # install Pandoc & TexLive
