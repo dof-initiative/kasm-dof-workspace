@@ -185,6 +185,7 @@
       version: "{{ m30pm_version }}"
     - name: markedpp
       version: "{{ markedpp_version }}"
+    - name: jtex  
 
 -
   # Install Yarn
