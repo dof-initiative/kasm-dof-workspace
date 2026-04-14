@@ -22,6 +22,8 @@ This repo provides a workspace for Mach 30 volunteers to work on [Mach 30 Modeli
     - Vim (pre-installed) with @capsulecorplab [vimrc](https://gist.github.com/capsulecorplab/495058e7a57ed8adaed3c40c80d09739#file-vimrc)
     - [yamllint](https://github.com/adrienverge/yamllint) v1.31.0
 - Python Based Tools
+    - python3-venv
+    - python3-pip
     - Jupyter Lab
     - Juptyer Notebook
     - Voila
