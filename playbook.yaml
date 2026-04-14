@@ -185,6 +185,7 @@
       version: "{{ m30pm_version }}"
     - name: markedpp
       version: "{{ markedpp_version }}"
+    - name: jtex  
 
 -
   # Install Yarn
@@ -392,6 +393,8 @@
         - linkml=={{ linkml_version }}
         - black[jupyter]
         - yamllint==1.31.0
+        - mystmd
+        - cookiecutter
 
 -
   # install Pandoc & TexLive

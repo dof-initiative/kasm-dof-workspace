@@ -21,6 +21,7 @@ This repo provides a workspace for Mach 30 volunteers to work on [Mach 30 Modeli
     - Vim (pre-installed) with @capsulecorplab [vimrc](https://gist.github.com/capsulecorplab/495058e7a57ed8adaed3c40c80d09739#file-vimrc)
     - [yamllint](https://github.com/adrienverge/yamllint) v1.31.0
     - [tree](https://github.com/j-simmons-phd/kasm-core-focal-template)
+    - [jtex](https://mystmd.org/jtex)
 - Python Based Tools
     - python3-venv
     - python3-pip
@@ -30,6 +31,8 @@ This repo provides a workspace for Mach 30 volunteers to work on [Mach 30 Modeli
     - Pint
     - LinkML v1.8.7
     - Poetry (latest)
+    - [mystmd](https://mystmd.org/)
+    - [cookiecutter](https://github.com/cookiecutter/cookiecutter)
 - Artifact Generators
     - [Pandoc](https://pandoc.org/) v2.18
     - [TeX Live](https://www.tug.org/texlive/) v2019 to enable PDF support in Pandoc
