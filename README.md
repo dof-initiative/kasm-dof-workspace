@@ -22,6 +22,8 @@ This repo provides a workspace for Mach 30 volunteers to work on [Mach 30 Modeli
     - [yamllint](https://github.com/adrienverge/yamllint) v1.31.0
     - [tree](https://github.com/j-simmons-phd/kasm-core-focal-template)
 - Python Based Tools
+    - python3-venv
+    - python3-pip
     - Jupyter Lab
     - Juptyer Notebook
     - Voila

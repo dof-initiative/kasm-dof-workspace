@@ -371,6 +371,10 @@
     apt:
       name: python-is-python3
       update_cache: yes
+  - name: Install venv for python3 with Apt
+    apt:
+      name: python3-venv
+      update_cache: yes
   - name: Install pip for python3 with Apt
     apt:
       name: python3-pip
