@@ -7,9 +7,9 @@
 This repo provides a workspace for Mach 30 volunteers to work on [Mach 30 Modeling Language](https://github.com/Mach30/m30ml), [Mach 30 Project Manager](https://github.com/Mach30/m30mlTools), the [Distributed OSHW Framework (DOF)](https://github.com/Mach30/dof), and [Sliderule](https://github.com/Mach30/sliderule) based on the [Ansible based template for KASM Ubuntu Noble Images](https://hub.docker.com/r/kasmweb/core-ubuntu-noble) template provided by @j-simmons-phd.  The workspace is configured with the following software:
 
 - Node JS Tools
-    - nodejs v23.8.0
-    - npm v10.9.2 (included with nodejs)
-    - npx v10.9.2 (included with nodejs)
+    - nodejs v25.9.0
+    - npm v11.12.1 (included with nodejs)
+    - npx v11.12.1 (included with nodejs)
     - yarn v4.3.1
     - oclif v4.17.32
     - m30pm v0.1.0
