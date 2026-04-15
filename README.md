@@ -29,7 +29,7 @@ This repo provides a workspace for Mach 30 volunteers to work on [Mach 30 Modeli
     - Juptyer Notebook
     - Voila
     - Pint
-    - LinkML v1.8.7
+    - [LinkML](https://github.com/linkml/linkml) v1.10.0
     - Poetry (latest)
     - [mystmd](https://mystmd.org/)
     - [cookiecutter](https://github.com/cookiecutter/cookiecutter)
