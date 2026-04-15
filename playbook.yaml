@@ -365,7 +365,7 @@
   - install_doctools
 
   vars:
-    linkml_version: "1.8.7"
+    linkml_version: "1.10.0"
 
   tasks:
   - name: Update OS to point python to python3
