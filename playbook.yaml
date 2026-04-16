@@ -186,6 +186,7 @@
     - name: markedpp
       version: "{{ markedpp_version }}"
     - name: jtex  
+    - name: corepack
 
 -
   # Install Yarn
