@@ -3,7 +3,7 @@ version: "3.7"
 services:
   kasm:
     build: .
-    image: ghcr.io/mach30/kasm-dof-workspace:v3.0.0
+    image: ghcr.io/dof-initiative/kasm-dof-workspace:v3.1.0
     ports:
       - "6901:6901"
     environment:
