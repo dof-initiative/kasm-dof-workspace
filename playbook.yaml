@@ -99,10 +99,10 @@
   - install_doctools
 
   vars:
-    node_version: "23.8.0"
+    node_version: "25.9.0"
     v_node_version: "v{{ node_version }}"
-    npm_version: "10.9.2"
-    npx_version: "10.9.2"
+    npm_version: "11.12.1"
+    npx_version: "11.12.1"
     yo_version: "5.0.0"
     generator_code_version: "1.11.1"
     oclif_version: "4.17.32"
@@ -186,6 +186,7 @@
     - name: markedpp
       version: "{{ markedpp_version }}"
     - name: jtex  
+    - name: corepack
 
 -
   # Install Yarn
