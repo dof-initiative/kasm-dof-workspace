@@ -37,7 +37,7 @@ This repo provides a workspace for Mach 30 volunteers to work on [Mach 30 Modeli
     - [Pandoc](https://pandoc.org/) v2.18
     - [TeX Live](https://www.tug.org/texlive/) v2019 to enable PDF support in Pandoc
     - [yq](https://mikefarah.gitbook.io/yq/) v4.33.2
-    - [PlantUML](https://plantuml.com/)
+    - [PlantUML](https://plantuml.com/) v1.2026.2
         - JDK v11
         - Graphviz 2.50 (built from source)
     - [AsciiDoctor](https://asciidoctor.org/) v2.0.18 with PlantUML and PDF support

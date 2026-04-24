@@ -223,7 +223,9 @@
   - install_doctools
 
   vars:
-    graphviz_version_expected: "dot - graphviz version 2.50.0 (20211204.2007)"
+    graphviz_verion: "2.50.0"
+    graphviz_version_expected: "dot - graphviz version {{ graphviz_verion }} (20211204.2007)"
+    plantuml_version: "1.2026.2"
 
   tasks:
   - name: Install pre-reqs to build graphviz
@@ -232,23 +234,26 @@
       update_cache: yes  
   - name: Expand source files archive
     unarchive:
-      src: /home/kasm-default-profile/install_files/graphviz-2.50.0.tar.gz
+      src: /home/kasm-default-profile/install_files/graphviz-{{ graphviz_verion }}.tar.gz
       dest: /home/kasm-default-profile/install_files/
       remote_src: yes
-      creates: /home/kasm-default-profile/install_files/graphviz-2.50.0/README
+      creates: /home/kasm-default-profile/install_files/graphviz-{{ graphviz_verion }}/README
   - name: Build graphviz
     shell: 
       cmd: ./configure --enable-perl=no && make > /tmp/graphviz_build_output.txt 2>&1 && make install
-      chdir: /home/kasm-default-profile/install_files/graphviz-2.50.0/
+      chdir: /home/kasm-default-profile/install_files/graphviz-{{ graphviz_verion }}/
       executable: /bin/bash    
-  - name: Get graphviz version
+  - name: Get Graphviz version
     shell: dot -V
     register: installed_graphviz_version
-  - name: install plantuml
+  - name: Install PlantUML v{{ plantuml_version }}
     copy:
-      src: /home/kasm-default-profile/install_files/plantuml.jar
+      src: /home/kasm-default-profile/install_files/plantuml-{{ plantuml_version }}.jar
       dest: /usr/local/bin/plantuml.jar
       remote_src: yes
+  - name: Get PlantUML version
+    shell: java -Djava.awt.headless=true -jar /usr/local/bin/plantuml.jar -version | grep 'PlantUML version' | awk '{ print $3 }'
+    register: installed_plantuml_version
   - name: Display GraphViz versions
     debug:
       msg: "graphviz = {{ installed_graphviz_version.stderr }}"
@@ -256,6 +261,10 @@
     fail:
       msg: "Graphviz Version Error: Expected {{ graphviz_version_expected }} | Found {{ installed_graphviz_version.stderr }}"
     when: installed_graphviz_version.stderr != graphviz_version_expected        
+  - name: Test PlantUML version
+    fail:
+      msg: "PlantUML Version Error: Expected {{ plantuml_version }} | Found {{ installed_plantuml_version.stderr }}"
+    when: installed_plantuml_version.stdout != plantuml_version
 
 -
   # install keychain, git, and @capsulecorplab .vimrc and .gitconfig
