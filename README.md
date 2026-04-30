@@ -80,3 +80,4 @@ Once built, the image can be pushed into the Kasm server per Kasm documentation 
 When running locally, the workspace can be accessed at https://localhost:6901 with
 - **User:** `kasm_user`
 - **Passwordd:** `password`
+# manifesto
